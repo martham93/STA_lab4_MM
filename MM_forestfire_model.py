@@ -41,7 +41,7 @@ class TreeCell(Agent):
         if self.condition == "On Fire":
             neighbors = self.model.grid.get_neighbors(self.pos, moore=False)
             for neighbor in neighbors:
-                if neighbor.condition == "Fine" and neighbor.elevation > (self.elevation - 75): #assuming each grid square is 1 mile by 1 mile 
+                if neighbor.condition == "Fine" and neighbor.elevation > (self.elevation-75): #assuming each grid square is 1 mile by 1 mile 
                     neighbor.condition = "On Fire"
             self.condition = "Burned Out"
 
@@ -109,3 +109,6 @@ class ForestFire(Model):
     def fake_surface(dim=(100, 100), low=500, high=1500, sigma=2): #change to width, height 
         r = uniform(low, high, size=multiply(*dim)).reshape(dim)
         return gaussian_filter(r, sigma=sigma, truncate=9)
+
+
+    
