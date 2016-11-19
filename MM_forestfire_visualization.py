@@ -1,4 +1,4 @@
-from MM_forestfire_model import * 
+from ff_wind_elevation import * 
 from mesa.visualization.modules import CanvasGrid
 from mesa.visualization.ModularVisualization import ModularServer
 
