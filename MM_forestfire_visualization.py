@@ -18,7 +18,7 @@ def agent_portrayal(agent):
      	portrayal["Layer"] = 1
 
     else:
-        portrayal["Color"] = "green"
+        portrayal["Color"] = "blue"
         portrayal["Layer"] = 1
         portrayal["r"] = 0.2
     return portrayal
