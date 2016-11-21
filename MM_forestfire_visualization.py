@@ -1,4 +1,6 @@
 from ff_wind_elevation import * 
+#from MM_forest_fire_model import *  
+#uncomment out line above to see model with just elevation
 from mesa.visualization.modules import CanvasGrid
 from mesa.visualization.ModularVisualization import ModularServer
 
@@ -18,7 +20,7 @@ def agent_portrayal(agent):
      	portrayal["Layer"] = 1
 
     else:
-        portrayal["Color"] = "blue"
+        portrayal["Color"] = "green"
         portrayal["Layer"] = 1
         portrayal["r"] = 0.2
     return portrayal
